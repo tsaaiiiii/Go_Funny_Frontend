@@ -1,6 +1,6 @@
-# Agent_Foundry
+# Go_Funny_Frontend
 
-這是一個以 AI 協作流程為核心的前端專案殼。專案本身不包含產品功能或領域邏輯；Claude 與 Codex 共用同一套規範、skills 與測試知識。
+這是 Go Funny 的前端專案，採用 React + Vite + TypeScript + Tailwind CSS，並以 OpenSpec 驅動規格與實作流程。
 
 ## AI Workflow
 
@@ -184,12 +184,26 @@ Agent 不會自動 commit，也不會自動 push。
 
 ## 開始使用
 
-環境需求：Node.js 22.22.3、pnpm 9.15.9。
+這個專案有提交 `.prototools`，會固定使用 Node.js `22.22.3`。
+套件管理工具使用 `pnpm 9.6.0`。
 
 ```bash
+proto activate zsh
 pnpm install
 pnpm dev
 ```
 
+如果你不想手動切 shell，可以直接用 proto 包住指令：
+
+```bash
+proto run node -- -v
+proto run pnpm -- dev
+```
+
+如果本機已有 proto 的 PATH 設定，進到專案後只要跑：
+
+```bash
+pnpm dev
+```
+
 建立新專案後，先修改 `package.json` 的 `name`、`index.html` 的 `title`，以及本文件的專案名稱與說明。
-# Go_Funny_Frontend
